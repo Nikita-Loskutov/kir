@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding:0;
+}
+header{
+    margin:20px 11% 0 11%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+body{
+    background-color:#181818;
+}
+h1{
+    font-family: "Tektur", serif;
+    font-weight: 600;
+    font-size:26px;
+    color:white;
+    z-index:3;
+    position:relative;
+}
+h3{
+    font-family: "Tektur", serif;
+    font-weight: 500;
+    font-size:22px;
+    color:white;
+    z-index:3;
+    position:relative;
+}
+h4{
+    font-family: "Tektur", serif;
+    font-weight: 500;
+    font-size:18px;
+    color:white;
+    z-index:3;
+    position:relative;
+}
+p{
+    font-family: "Tektur", serif;
+    font-weight: 400;
+    font-size:14px;
+    color:white;
+    z-index:3;
+    position:relative;
+}
+header img{
+    width:45px;
+}
+nav{
+    width:40%;
+    min-width:400px;
+}
+.mainnav{
+    list-style: none;
+    display:flex;
+    flex-direction:row;
+    font-family: "Tektur", serif;
+    font-weight: 600;
+    font-variation-settings:"wdth" 100;
+    height:100%;
+    width:100%;
+    justify-content:space-between;
+    align-items:center;
+
+}
+.mainnav a{
+    color:#C9C9C9;
+    text-decoration:none;
+    font-size:20px;
+}
+
+.firstscreen{
+    margin:10%;
+    margin-top: 12%;
+}
+.firstscreen h1{
+    text-align:center;
+    margin-bottom:3%
+}
+.firstscreen h4{
+    text-align:center;
+    margin:0 15%;
+}
+.firstscreen img{
+    position:absolute;
+}
+
+
+.blob {
+    width: 50%;
+    height: 400px;
+    background: linear-gradient(45deg, blue, red);
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(20px);
+    top:24%;
+    left:25%;
+    z-index:1;
+    animation: morph 4s infinite ease-in-out alternate, move 6s infinite linear;
+
+}
+.miniblob {
+    width: 14%;
+    height: 20%;
+    background: linear-gradient(45deg, blue, red);
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(30px);
+    top:556px;
+    left:50%;
+    z-index: 0;
+    display: none;
+    animation: morph 4s infinite ease-in-out alternate, miniblobMove 25s infinite linear;;
+}
+.advantages{
+    display:flex;
+    margin: 15%;
+    margin-bottom: 0;
+    gap:3%
+}
+.adv_element{
+    display: flex;
+    gap:15px;
+    flex-direction: column;
+}
+.advantages_category{
+    display: flex;
+    margin: 10% 15%;
+    gap:20%;
+}
+.advList{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+@keyframes morph {
+    0% {
+        border-radius: 40% 20% 10% 50% / 70% 60% 40% 50%;
+    }
+    50% {
+        border-radius: 40% 60% 10% 80% / 90% 40% 80% 50%;
+    }
+    100% {
+        border-radius: 10% 50% 30% 60% / 40% 50% 70% 50%;
+    }
+}
+
+@keyframes move {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    50% { transform: translate(-10px, 30px) rotate(10deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes miniblobMove {
+    0% { transform: translate(0, 0) rotate(10deg); }
+    20% { transform: translate(125%, 70%) rotate(60deg); }
+    30% {transform: translate(120%, -20%) rotate(40deg);}
+    60% {transform: translate(-250%, 50%) rotate(-20deg); }
+    70% {transform: translate(-230%,-40%) rotate(3deg);}
+    100% { transform: translate(0, 0) rotate(10deg); }
+}
+@media (max-width:800px){
+    header{
+        margin:20px 5% 0 5%;
+    }
+}
+

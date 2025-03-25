@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wdth,wght@75..100,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <title>Hookeer</title>
+</head>
+<body>
+    <header>
+        <img src="/img/logo.png">
+        <nav>
+            <ul class="mainnav">
+                <li><a href="#">Товары</a></li>
+                <li><a href="#">Возможности</a></li>
+                <li><a href="#">Статьи</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="firstscreen">
+            <div class="blob"></div>
+            <div class="miniblob" id="miniblob"></div>
+            <h1>Hookeer - сервис покупки действующего софта.</h1>
+            <h4>Мы оказываем услуги предоставляющие доступ к различным софтам, темкам и абузам.
+С помощью них Вы сможете облегчить рутинные действия в интернете или получить возможность заработка.
+Постоянная поддержка и обновления каждого проекта и регулярные выходы статей.</h4>
+
+        </div>
+        <div class="advantages">
+            <div class="adv_element">
+                <h3>Качество</h3>
+                <p>Мы предоставляем качественный продукт, который проверяется нашими специалистами.</p>
+            </div>
+            <div class="adv_element">
+                <h3>Быстрая установка</h3>
+                <p>Установка наших программ не занимает много времени, так как у них хорошая оптимизация. </p>
+            </div>
+            <div class="adv_element">
+                <h3>Поддержка</h3>
+                <p>В случаях сбоев или каких-то проблем, наша поддержка всегда поможет справиться с ними. </p>
+            </div>
+        </div>
+        <div class="advantages_category">
+            <h3>Премущества</h3>
+            <div class="advList">
+                <h4>У нас есть большое разнообразие софтов, подходящие под большинство бизнес реализаций или просто для своего пользования.</h4>
+                <h4>Большое количество товаров</h4>
+                <h4>Ежемесячное пополнение товаров</h4>
+                <h4>Все данные шифруются и не передаются третьим лицам</h4>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
